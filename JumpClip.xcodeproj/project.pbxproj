@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157461042D05042499E8CC2A /* Pods_JumpClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */; };
 		6DFE9181219AC402009EACF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9180219AC402009EACF3 /* AppDelegate.swift */; };
 		6DFE9183219AC403009EACF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE9182219AC403009EACF3 /* Assets.xcassets */; };
 		6DFE9186219AC403009EACF3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE9184219AC403009EACF3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.debug.xcconfig"; sourceTree = "<group>"; };
+		289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFE917D219AC402009EACF3 /* JumpClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFE9180219AC402009EACF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DFE9182219AC403009EACF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DFE9185219AC403009EACF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6DFE9187219AC403009EACF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFE9188219AC403009EACF3 /* JumpClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JumpClip.entitlements; sourceTree = "<group>"; };
+		DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.release.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157461042D05042499E8CC2A /* Pods_JumpClip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5CCB07234D33F61EFB7964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DFE9174219AC402009EACF3 = {
 			isa = PBXGroup;
 			children = (
 				6DFE917F219AC402009EACF3 /* JumpClip */,
 				6DFE917E219AC402009EACF3 /* Products */,
+				D593CE20B672FF66B5B28C45 /* Pods */,
+				4F5CCB07234D33F61EFB7964 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +75,15 @@
 			path = JumpClip;
 			sourceTree = "<group>";
 		};
+		D593CE20B672FF66B5B28C45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */,
+				DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -67,9 +91,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DFE918B219AC403009EACF3 /* Build configuration list for PBXNativeTarget "JumpClip" */;
 			buildPhases = (
+				B911512734D178517EA256C3 /* [CP] Check Pods Manifest.lock */,
 				6DFE9179219AC402009EACF3 /* Sources */,
 				6DFE917A219AC402009EACF3 /* Frameworks */,
 				6DFE917B219AC402009EACF3 /* Resources */,
+				A5D82A5135298652C2E74C60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +150,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5D82A5135298652C2E74C60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Magnet/Magnet.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magnet.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B911512734D178517EA256C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JumpClip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DFE9179219AC402009EACF3 /* Sources */ = {
@@ -265,6 +338,7 @@
 		};
 		6DFE918C219AC403009EACF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
@@ -275,6 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.JumpClip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -283,6 +358,7 @@
 		};
 		6DFE918D219AC403009EACF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
@@ -293,6 +369,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.JumpClip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
