@@ -7,95 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		157461042D05042499E8CC2A /* Pods_JumpClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */; };
-		6DFE9181219AC402009EACF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9180219AC402009EACF3 /* AppDelegate.swift */; };
-		6DFE9183219AC403009EACF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE9182219AC403009EACF3 /* Assets.xcassets */; };
-		6DFE9186219AC403009EACF3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE9184219AC403009EACF3 /* MainMenu.xib */; };
+		6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C2219BC5580002EABF /* AppDelegate.swift */; };
+		6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C4219BC5580002EABF /* ViewController.swift */; };
+		6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C6219BC5590002EABF /* Assets.xcassets */; };
+		6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C8219BC5590002EABF /* Main.storyboard */; };
+		9864F6390E559D3BC0A0C3BA /* Pods_JumpClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.debug.xcconfig"; sourceTree = "<group>"; };
-		289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DFE917D219AC402009EACF3 /* JumpClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DFE9180219AC402009EACF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DFE9182219AC403009EACF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6DFE9185219AC403009EACF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6DFE9187219AC403009EACF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DFE9188219AC403009EACF3 /* JumpClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JumpClip.entitlements; sourceTree = "<group>"; };
-		DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.release.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.release.xcconfig"; sourceTree = "<group>"; };
+		09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.release.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.release.xcconfig"; sourceTree = "<group>"; };
+		6D0E70BF219BC5580002EABF /* JumpClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0E70C2219BC5580002EABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D0E70C4219BC5580002EABF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D0E70C6219BC5590002EABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0E70C9219BC5590002EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D0E70CB219BC5590002EABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0E70CC219BC5590002EABF /* JumpClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JumpClip.entitlements; sourceTree = "<group>"; };
+		CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6DFE917A219AC402009EACF3 /* Frameworks */ = {
+		6D0E70BC219BC5580002EABF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157461042D05042499E8CC2A /* Pods_JumpClip.framework in Frameworks */,
+				9864F6390E559D3BC0A0C3BA /* Pods_JumpClip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F5CCB07234D33F61EFB7964 /* Frameworks */ = {
+		2C57AA19968B4DE8453B8341 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				289D8CF6E48AB0F35C6C42E5 /* Pods_JumpClip.framework */,
+				09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6DFE9174219AC402009EACF3 = {
+		3446B431F19375B8D0E9DF29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6DFE917F219AC402009EACF3 /* JumpClip */,
-				6DFE917E219AC402009EACF3 /* Products */,
-				D593CE20B672FF66B5B28C45 /* Pods */,
-				4F5CCB07234D33F61EFB7964 /* Frameworks */,
+				CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */,
+				1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D0E70B6219BC5580002EABF = {
+			isa = PBXGroup;
+			children = (
+				6D0E70C1219BC5580002EABF /* JumpClip */,
+				6D0E70C0219BC5580002EABF /* Products */,
+				3446B431F19375B8D0E9DF29 /* Pods */,
+				2C57AA19968B4DE8453B8341 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		6DFE917E219AC402009EACF3 /* Products */ = {
+		6D0E70C0219BC5580002EABF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DFE917D219AC402009EACF3 /* JumpClip.app */,
+				6D0E70BF219BC5580002EABF /* JumpClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DFE917F219AC402009EACF3 /* JumpClip */ = {
+		6D0E70C1219BC5580002EABF /* JumpClip */ = {
 			isa = PBXGroup;
 			children = (
-				6DFE9180219AC402009EACF3 /* AppDelegate.swift */,
-				6DFE9182219AC403009EACF3 /* Assets.xcassets */,
-				6DFE9184219AC403009EACF3 /* MainMenu.xib */,
-				6DFE9187219AC403009EACF3 /* Info.plist */,
-				6DFE9188219AC403009EACF3 /* JumpClip.entitlements */,
+				6D0E70C2219BC5580002EABF /* AppDelegate.swift */,
+				6D0E70C4219BC5580002EABF /* ViewController.swift */,
+				6D0E70C6219BC5590002EABF /* Assets.xcassets */,
+				6D0E70C8219BC5590002EABF /* Main.storyboard */,
+				6D0E70CB219BC5590002EABF /* Info.plist */,
+				6D0E70CC219BC5590002EABF /* JumpClip.entitlements */,
 			);
 			path = JumpClip;
-			sourceTree = "<group>";
-		};
-		D593CE20B672FF66B5B28C45 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */,
-				DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DFE917C219AC402009EACF3 /* JumpClip */ = {
+		6D0E70BE219BC5580002EABF /* JumpClip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DFE918B219AC403009EACF3 /* Build configuration list for PBXNativeTarget "JumpClip" */;
+			buildConfigurationList = 6D0E70CF219BC5590002EABF /* Build configuration list for PBXNativeTarget "JumpClip" */;
 			buildPhases = (
-				B911512734D178517EA256C3 /* [CP] Check Pods Manifest.lock */,
-				6DFE9179219AC402009EACF3 /* Sources */,
-				6DFE917A219AC402009EACF3 /* Frameworks */,
-				6DFE917B219AC402009EACF3 /* Resources */,
-				A5D82A5135298652C2E74C60 /* [CP] Embed Pods Frameworks */,
+				64B7E2D4FDED35DFCE5D0E71 /* [CP] Check Pods Manifest.lock */,
+				6D0E70BB219BC5580002EABF /* Sources */,
+				6D0E70BC219BC5580002EABF /* Frameworks */,
+				6D0E70BD219BC5580002EABF /* Resources */,
+				012CED454324112CBADC0A65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,25 +106,25 @@
 			);
 			name = JumpClip;
 			productName = JumpClip;
-			productReference = 6DFE917D219AC402009EACF3 /* JumpClip.app */;
+			productReference = 6D0E70BF219BC5580002EABF /* JumpClip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6DFE9175219AC402009EACF3 /* Project object */ = {
+		6D0E70B7219BC5580002EABF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "灏 孙 ";
 				TargetAttributes = {
-					6DFE917C219AC402009EACF3 = {
+					6D0E70BE219BC5580002EABF = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 6DFE9178219AC402009EACF3 /* Build configuration list for PBXProject "JumpClip" */;
+			buildConfigurationList = 6D0E70BA219BC5580002EABF /* Build configuration list for PBXProject "JumpClip" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,30 +132,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 6DFE9174219AC402009EACF3;
-			productRefGroup = 6DFE917E219AC402009EACF3 /* Products */;
+			mainGroup = 6D0E70B6219BC5580002EABF;
+			productRefGroup = 6D0E70C0219BC5580002EABF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DFE917C219AC402009EACF3 /* JumpClip */,
+				6D0E70BE219BC5580002EABF /* JumpClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6DFE917B219AC402009EACF3 /* Resources */ = {
+		6D0E70BD219BC5580002EABF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFE9183219AC403009EACF3 /* Assets.xcassets in Resources */,
-				6DFE9186219AC403009EACF3 /* MainMenu.xib in Resources */,
+				6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */,
+				6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A5D82A5135298652C2E74C60 /* [CP] Embed Pods Frameworks */ = {
+		012CED454324112CBADC0A65 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -162,19 +165,23 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Magnet/Magnet.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magnet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B911512734D178517EA256C3 /* [CP] Check Pods Manifest.lock */ = {
+		64B7E2D4FDED35DFCE5D0E71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,29 +206,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6DFE9179219AC402009EACF3 /* Sources */ = {
+		6D0E70BB219BC5580002EABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFE9181219AC402009EACF3 /* AppDelegate.swift in Sources */,
+				6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */,
+				6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6DFE9184219AC403009EACF3 /* MainMenu.xib */ = {
+		6D0E70C8219BC5590002EABF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DFE9185219AC403009EACF3 /* Base */,
+				6D0E70C9219BC5590002EABF /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6DFE9189219AC403009EACF3 /* Debug */ = {
+		6D0E70CD219BC5590002EABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		6DFE918A219AC403009EACF3 /* Release */ = {
+		6D0E70CE219BC5590002EABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,9 +344,9 @@
 			};
 			name = Release;
 		};
-		6DFE918C219AC403009EACF3 /* Debug */ = {
+		6D0E70D0219BC5590002EABF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170D0FE9F4B3EFD4D5349285 /* Pods-JumpClip.debug.xcconfig */;
+			baseConfigurationReference = CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
@@ -349,16 +357,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.JumpClip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		6DFE918D219AC403009EACF3 /* Release */ = {
+		6D0E70D1219BC5590002EABF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD9305A5056008D616434D96 /* Pods-JumpClip.release.xcconfig */;
+			baseConfigurationReference = 1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
@@ -369,8 +376,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.JumpClip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -379,25 +385,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DFE9178219AC402009EACF3 /* Build configuration list for PBXProject "JumpClip" */ = {
+		6D0E70BA219BC5580002EABF /* Build configuration list for PBXProject "JumpClip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DFE9189219AC403009EACF3 /* Debug */,
-				6DFE918A219AC403009EACF3 /* Release */,
+				6D0E70CD219BC5590002EABF /* Debug */,
+				6D0E70CE219BC5590002EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DFE918B219AC403009EACF3 /* Build configuration list for PBXNativeTarget "JumpClip" */ = {
+		6D0E70CF219BC5590002EABF /* Build configuration list for PBXNativeTarget "JumpClip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DFE918C219AC403009EACF3 /* Debug */,
-				6DFE918D219AC403009EACF3 /* Release */,
+				6D0E70D0219BC5590002EABF /* Debug */,
+				6D0E70D1219BC5590002EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6DFE9175219AC402009EACF3 /* Project object */;
+	rootObject = 6D0E70B7219BC5580002EABF /* Project object */;
 }
