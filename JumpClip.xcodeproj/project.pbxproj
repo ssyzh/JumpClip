@@ -11,12 +11,15 @@
 		6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C4219BC5580002EABF /* ViewController.swift */; };
 		6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C6219BC5590002EABF /* Assets.xcassets */; };
 		6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C8219BC5590002EABF /* Main.storyboard */; };
-		9864F6390E559D3BC0A0C3BA /* Pods_JumpClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */; };
+		6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643991219BEFAD006A15D4 /* Realm.framework */; };
+		6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643992219BEFAD006A15D4 /* Magnet.framework */; };
+		6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643993219BEFAD006A15D4 /* RealmSwift.framework */; };
+		6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6439BF219C1101006A15D4 /* BezelWindow.swift */; };
+		6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D643A06219D63C0006A15D4 /* BezelContentVC.swift */; };
+		6D643A09219D64A1006A15D4 /* BezelWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D643A08219D64A1006A15D4 /* BezelWC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.release.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.release.xcconfig"; sourceTree = "<group>"; };
 		6D0E70BF219BC5580002EABF /* JumpClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0E70C2219BC5580002EABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D0E70C4219BC5580002EABF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +27,12 @@
 		6D0E70C9219BC5590002EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D0E70CB219BC5590002EABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0E70CC219BC5590002EABF /* JumpClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JumpClip.entitlements; sourceTree = "<group>"; };
-		CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpClip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip.debug.xcconfig"; sourceTree = "<group>"; };
+		6D643991219BEFAD006A15D4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		6D643992219BEFAD006A15D4 /* Magnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Magnet.framework; path = Carthage/Build/Mac/Magnet.framework; sourceTree = "<group>"; };
+		6D643993219BEFAD006A15D4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		6D6439BF219C1101006A15D4 /* BezelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindow.swift; sourceTree = "<group>"; };
+		6D643A06219D63C0006A15D4 /* BezelContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelContentVC.swift; sourceTree = "<group>"; };
+		6D643A08219D64A1006A15D4 /* BezelWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,37 +40,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9864F6390E559D3BC0A0C3BA /* Pods_JumpClip.framework in Frameworks */,
+				6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */,
+				6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */,
+				6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C57AA19968B4DE8453B8341 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				09C92C08397DE85E3BC02CFF /* Pods_JumpClip.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3446B431F19375B8D0E9DF29 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */,
-				1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6D0E70B6219BC5580002EABF = {
 			isa = PBXGroup;
 			children = (
 				6D0E70C1219BC5580002EABF /* JumpClip */,
 				6D0E70C0219BC5580002EABF /* Products */,
-				3446B431F19375B8D0E9DF29 /* Pods */,
-				2C57AA19968B4DE8453B8341 /* Frameworks */,
+				6D643990219BEFAD006A15D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +71,25 @@
 			children = (
 				6D0E70C2219BC5580002EABF /* AppDelegate.swift */,
 				6D0E70C4219BC5580002EABF /* ViewController.swift */,
+				6D6439BF219C1101006A15D4 /* BezelWindow.swift */,
+				6D643A08219D64A1006A15D4 /* BezelWC.swift */,
+				6D643A06219D63C0006A15D4 /* BezelContentVC.swift */,
 				6D0E70C6219BC5590002EABF /* Assets.xcassets */,
 				6D0E70C8219BC5590002EABF /* Main.storyboard */,
 				6D0E70CB219BC5590002EABF /* Info.plist */,
 				6D0E70CC219BC5590002EABF /* JumpClip.entitlements */,
 			);
 			path = JumpClip;
+			sourceTree = "<group>";
+		};
+		6D643990219BEFAD006A15D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D643992219BEFAD006A15D4 /* Magnet.framework */,
+				6D643991219BEFAD006A15D4 /* Realm.framework */,
+				6D643993219BEFAD006A15D4 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,11 +99,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0E70CF219BC5590002EABF /* Build configuration list for PBXNativeTarget "JumpClip" */;
 			buildPhases = (
-				64B7E2D4FDED35DFCE5D0E71 /* [CP] Check Pods Manifest.lock */,
 				6D0E70BB219BC5580002EABF /* Sources */,
 				6D0E70BC219BC5580002EABF /* Frameworks */,
 				6D0E70BD219BC5580002EABF /* Resources */,
-				012CED454324112CBADC0A65 /* [CP] Embed Pods Frameworks */,
+				6D643997219BEFB5006A15D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,7 +159,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		012CED454324112CBADC0A65 /* [CP] Embed Pods Frameworks */ = {
+		6D643997219BEFB5006A15D4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,45 +167,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Magnet/Magnet.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Magnet.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magnet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JumpClip/Pods-JumpClip-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64B7E2D4FDED35DFCE5D0E71 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JumpClip-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -211,7 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */,
+				6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */,
 				6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */,
+				6D643A09219D64A1006A15D4 /* BezelWC.swift in Sources */,
+				6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,17 +325,21 @@
 		};
 		6D0E70D0219BC5590002EABF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB5047E0E1D4BCF86547CFA1 /* Pods-JumpClip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = JumpClip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -365,17 +348,21 @@
 		};
 		6D0E70D1219BC5590002EABF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1404140629B5322B07FA8CC8 /* Pods-JumpClip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JumpClip/JumpClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = JumpClip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
