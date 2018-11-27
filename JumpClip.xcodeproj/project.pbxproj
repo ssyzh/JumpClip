@@ -11,12 +11,15 @@
 		6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C4219BC5580002EABF /* ViewController.swift */; };
 		6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C6219BC5590002EABF /* Assets.xcassets */; };
 		6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C8219BC5590002EABF /* Main.storyboard */; };
+		6D281EC221A536EE00275035 /* Constan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D281EC121A536EE00275035 /* Constan.swift */; };
+		6D281EC921A54C9100275035 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D281EC421A54C9100275035 /* RxCocoa.framework */; };
+		6D281ECB21A54C9100275035 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D281EC621A54C9100275035 /* RxSwift.framework */; };
 		6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643991219BEFAD006A15D4 /* Realm.framework */; };
 		6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643992219BEFAD006A15D4 /* Magnet.framework */; };
 		6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643993219BEFAD006A15D4 /* RealmSwift.framework */; };
 		6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6439BF219C1101006A15D4 /* BezelWindow.swift */; };
 		6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D643A06219D63C0006A15D4 /* BezelContentVC.swift */; };
-		6D643A09219D64A1006A15D4 /* BezelWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D643A08219D64A1006A15D4 /* BezelWC.swift */; };
+		6DD0BA2B21A509FC0010410E /* ClipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0BA2A21A509FC0010410E /* ClipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +30,18 @@
 		6D0E70C9219BC5590002EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D0E70CB219BC5590002EABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0E70CC219BC5590002EABF /* JumpClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JumpClip.entitlements; sourceTree = "<group>"; };
+		6D281EC121A536EE00275035 /* Constan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constan.swift; sourceTree = "<group>"; };
+		6D281EC321A54C9100275035 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
+		6D281EC421A54C9100275035 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		6D281EC521A54C9100275035 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
+		6D281EC621A54C9100275035 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		6D281EC721A54C9100275035 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/Mac/RxAtomic.framework; sourceTree = "<group>"; };
 		6D643991219BEFAD006A15D4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
 		6D643992219BEFAD006A15D4 /* Magnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Magnet.framework; path = Carthage/Build/Mac/Magnet.framework; sourceTree = "<group>"; };
 		6D643993219BEFAD006A15D4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		6D6439BF219C1101006A15D4 /* BezelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindow.swift; sourceTree = "<group>"; };
 		6D643A06219D63C0006A15D4 /* BezelContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelContentVC.swift; sourceTree = "<group>"; };
-		6D643A08219D64A1006A15D4 /* BezelWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWC.swift; sourceTree = "<group>"; };
+		6DD0BA2A21A509FC0010410E /* ClipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D281EC921A54C9100275035 /* RxCocoa.framework in Frameworks */,
+				6D281ECB21A54C9100275035 /* RxSwift.framework in Frameworks */,
 				6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */,
 				6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */,
 				6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */,
@@ -72,8 +83,9 @@
 				6D0E70C2219BC5580002EABF /* AppDelegate.swift */,
 				6D0E70C4219BC5580002EABF /* ViewController.swift */,
 				6D6439BF219C1101006A15D4 /* BezelWindow.swift */,
-				6D643A08219D64A1006A15D4 /* BezelWC.swift */,
 				6D643A06219D63C0006A15D4 /* BezelContentVC.swift */,
+				6DD0BA2A21A509FC0010410E /* ClipModel.swift */,
+				6D281EC121A536EE00275035 /* Constan.swift */,
 				6D0E70C6219BC5590002EABF /* Assets.xcassets */,
 				6D0E70C8219BC5590002EABF /* Main.storyboard */,
 				6D0E70CB219BC5590002EABF /* Info.plist */,
@@ -85,6 +97,11 @@
 		6D643990219BEFAD006A15D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D281EC721A54C9100275035 /* RxAtomic.framework */,
+				6D281EC521A54C9100275035 /* RxBlocking.framework */,
+				6D281EC421A54C9100275035 /* RxCocoa.framework */,
+				6D281EC621A54C9100275035 /* RxSwift.framework */,
+				6D281EC321A54C9100275035 /* RxTest.framework */,
 				6D643992219BEFAD006A15D4 /* Magnet.framework */,
 				6D643991219BEFAD006A15D4 /* Realm.framework */,
 				6D643993219BEFAD006A15D4 /* RealmSwift.framework */,
@@ -170,6 +187,8 @@
 				"$(SRCROOT)/Carthage/Build/Mac/Magnet.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -186,10 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD0BA2B21A509FC0010410E /* ClipModel.swift in Sources */,
 				6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */,
 				6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */,
 				6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */,
-				6D643A09219D64A1006A15D4 /* BezelWC.swift in Sources */,
+				6D281EC221A536EE00275035 /* Constan.swift in Sources */,
 				6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
