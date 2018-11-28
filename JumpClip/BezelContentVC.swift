@@ -51,16 +51,20 @@ class BezelContentVC: NSViewController,NSTableViewDelegate,NSTableViewDataSource
                 
                 let app = NSApplication.shared.delegate as! AppDelegate
                 app.currentChangeCount = se.jcPasteboard.changeCount
-//                NSNumber *keyCode = [srTransformer reverseTransformedValue:@"V"];
-//                CGKeyCode veeCode = (CGKeyCode)[keyCode intValue];
-//                CGPostKeyboardEvent( (CGCharCode)0, (CGKeyCode)55, true ); // Command down
-//                CGPostKeyboardEvent( (CGCharCode)'v', veeCode, true ); // V down
-//                CGPostKeyboardEvent( (CGCharCode)'v', veeCode, false ); //  V up
-//                CGPostKeyboardEvent( (CGCharCode)0, (CGKeyCode)55, false ); // Command up
-
-           
-                
-
+                DispatchQueue.main.async {
+                    let source = CGEventSource(stateID: .combinedSessionState)
+                    // Disable local keyboard events while pasting
+                    source?.setLocalEventsFilterDuringSuppressionState([.permitLocalMouseEvents, .permitSystemDefinedEvents], state: .eventSuppressionStateSuppressionInterval)
+                    // Press Command + V
+                    let keyVDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: true)
+                    keyVDown?.flags = .maskCommand
+                    // Release Command + V
+                    let keyVUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: false)
+                    keyVUp?.flags = .maskCommand
+                    // Post Paste Command
+                    keyVDown?.post(tap: .cgAnnotatedSessionEventTap)
+                    keyVUp?.post(tap: .cgAnnotatedSessionEventTap)
+                }
             }
             
         })
@@ -158,22 +162,6 @@ extension BezelContentVC{
 }
 
 extension BezelContentVC {
-    //按下按键
-    func keyboardKeyDown(key: CGKeyCode) {
-        
-        let source = CGEventSource(stateID: CGEventSourceStateID.hidSystemState)
-        let event = CGEvent(keyboardEventSource: source, virtualKey: key, keyDown: true)
-        event?.post(tap: CGEventTapLocation.cghidEventTap)
-        print("key \(key) is down")
-    }
-    
-    //松开按键
-    func keyboardKeyUp(key: CGKeyCode) {
-        let source = CGEventSource(stateID: CGEventSourceStateID.hidSystemState)
-        let event = CGEvent(keyboardEventSource: source, virtualKey: key, keyDown: false)
-        event?.post(tap: CGEventTapLocation.cghidEventTap)
-        print("key \(key) is released")
-    }
 
 }
 

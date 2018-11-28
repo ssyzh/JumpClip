@@ -42,6 +42,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
+        let opts = NSDictionary(object: kCFBooleanTrue,
+                                forKey: kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString
+            ) as CFDictionary
+        
+        AXIsProcessTrustedWithOptions(opts)
+   
+        
         // 设置数据库文件名
         setDefaultRealmForUser(username: "test")
         setEvevtObserve()
@@ -142,6 +149,7 @@ extension AppDelegate{
             self.isShow = true
             NSApp.activate(ignoringOtherApps: true)
             self.bezel.window?.orderFrontRegardless()
+            self.bezel.window?.center()
             self.bezel.showWindow(self)
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: Constan.notifacation_appShow), object: nil, userInfo:nil)
 
