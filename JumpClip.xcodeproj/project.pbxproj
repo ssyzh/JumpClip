@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C2219BC5580002EABF /* AppDelegate.swift */; };
+		6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E70C4219BC5580002EABF /* ViewController.swift */; };
+		6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C6219BC5590002EABF /* Assets.xcassets */; };
+		6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E70C8219BC5590002EABF /* Main.storyboard */; };
+		6D281EC221A536EE00275035 /* Constan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D281EC121A536EE00275035 /* Constan.swift */; };
+		6D281EC921A54C9100275035 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D281EC421A54C9100275035 /* RxCocoa.framework */; };
+		6D281ECB21A54C9100275035 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D281EC621A54C9100275035 /* RxSwift.framework */; };
+		6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643991219BEFAD006A15D4 /* Realm.framework */; };
+		6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643992219BEFAD006A15D4 /* Magnet.framework */; };
+		6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D643993219BEFAD006A15D4 /* RealmSwift.framework */; };
+		6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6439BF219C1101006A15D4 /* BezelWindow.swift */; };
+		6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D643A06219D63C0006A15D4 /* BezelContentVC.swift */; };
+		6DD0BA2B21A509FC0010410E /* ClipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0BA2A21A509FC0010410E /* ClipModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D0E70BF219BC5580002EABF /* JumpClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0E70C2219BC5580002EABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D0E70C4219BC5580002EABF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D0E70C6219BC5590002EABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0E70C9219BC5590002EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D0E70CB219BC5590002EABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D281EC121A536EE00275035 /* Constan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constan.swift; sourceTree = "<group>"; };
+		6D281EC321A54C9100275035 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
+		6D281EC421A54C9100275035 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		6D281EC521A54C9100275035 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
+		6D281EC621A54C9100275035 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		6D281EC721A54C9100275035 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/Mac/RxAtomic.framework; sourceTree = "<group>"; };
+		6D643991219BEFAD006A15D4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		6D643992219BEFAD006A15D4 /* Magnet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Magnet.framework; path = Carthage/Build/Mac/Magnet.framework; sourceTree = "<group>"; };
+		6D643993219BEFAD006A15D4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		6D6439BF219C1101006A15D4 /* BezelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindow.swift; sourceTree = "<group>"; };
+		6D643A06219D63C0006A15D4 /* BezelContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelContentVC.swift; sourceTree = "<group>"; };
+		6DD0BA2A21A509FC0010410E /* ClipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D0E70BC219BC5580002EABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D281EC921A54C9100275035 /* RxCocoa.framework in Frameworks */,
+				6D281ECB21A54C9100275035 /* RxSwift.framework in Frameworks */,
+				6D643994219BEFAD006A15D4 /* Realm.framework in Frameworks */,
+				6D643995219BEFAD006A15D4 /* Magnet.framework in Frameworks */,
+				6D643996219BEFAD006A15D4 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D0E70B6219BC5580002EABF = {
+			isa = PBXGroup;
+			children = (
+				6D0E70C1219BC5580002EABF /* JumpClip */,
+				6D0E70C0219BC5580002EABF /* Products */,
+				6D643990219BEFAD006A15D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D0E70C0219BC5580002EABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E70BF219BC5580002EABF /* JumpClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D0E70C1219BC5580002EABF /* JumpClip */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E70C2219BC5580002EABF /* AppDelegate.swift */,
+				6D0E70C4219BC5580002EABF /* ViewController.swift */,
+				6D6439BF219C1101006A15D4 /* BezelWindow.swift */,
+				6D643A06219D63C0006A15D4 /* BezelContentVC.swift */,
+				6DD0BA2A21A509FC0010410E /* ClipModel.swift */,
+				6D281EC121A536EE00275035 /* Constan.swift */,
+				6D0E70C6219BC5590002EABF /* Assets.xcassets */,
+				6D0E70C8219BC5590002EABF /* Main.storyboard */,
+				6D0E70CB219BC5590002EABF /* Info.plist */,
+			);
+			path = JumpClip;
+			sourceTree = "<group>";
+		};
+		6D643990219BEFAD006A15D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D281EC721A54C9100275035 /* RxAtomic.framework */,
+				6D281EC521A54C9100275035 /* RxBlocking.framework */,
+				6D281EC421A54C9100275035 /* RxCocoa.framework */,
+				6D281EC621A54C9100275035 /* RxSwift.framework */,
+				6D281EC321A54C9100275035 /* RxTest.framework */,
+				6D643992219BEFAD006A15D4 /* Magnet.framework */,
+				6D643991219BEFAD006A15D4 /* Realm.framework */,
+				6D643993219BEFAD006A15D4 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0E70BE219BC5580002EABF /* JumpClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0E70CF219BC5590002EABF /* Build configuration list for PBXNativeTarget "JumpClip" */;
+			buildPhases = (
+				6D0E70BB219BC5580002EABF /* Sources */,
+				6D0E70BC219BC5580002EABF /* Frameworks */,
+				6D0E70BD219BC5580002EABF /* Resources */,
+				6D643997219BEFB5006A15D4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JumpClip;
+			productName = JumpClip;
+			productReference = 6D0E70BF219BC5580002EABF /* JumpClip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D0E70B7219BC5580002EABF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "灏 孙 ";
+				TargetAttributes = {
+					6D0E70BE219BC5580002EABF = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6D0E70BA219BC5580002EABF /* Build configuration list for PBXProject "JumpClip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D0E70B6219BC5580002EABF;
+			productRefGroup = 6D0E70C0219BC5580002EABF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D0E70BE219BC5580002EABF /* JumpClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D0E70BD219BC5580002EABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0E70C7219BC5590002EABF /* Assets.xcassets in Resources */,
+				6D0E70CA219BC5590002EABF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D643997219BEFB5006A15D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Magnet.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D0E70BB219BC5580002EABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD0BA2B21A509FC0010410E /* ClipModel.swift in Sources */,
+				6D0E70C5219BC5580002EABF /* ViewController.swift in Sources */,
+				6D6439C0219C1101006A15D4 /* BezelWindow.swift in Sources */,
+				6D0E70C3219BC5580002EABF /* AppDelegate.swift in Sources */,
+				6D281EC221A536EE00275035 /* Constan.swift in Sources */,
+				6D643A07219D63C0006A15D4 /* BezelContentVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D0E70C8219BC5590002EABF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0E70C9219BC5590002EABF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D0E70CD219BC5590002EABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D0E70CE219BC5590002EABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6D0E70D0219BC5590002EABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = JumpClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		6D0E70D1219BC5590002EABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = JumpClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssyzh.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D0E70BA219BC5580002EABF /* Build configuration list for PBXProject "JumpClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0E70CD219BC5590002EABF /* Debug */,
+				6D0E70CE219BC5590002EABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0E70CF219BC5590002EABF /* Build configuration list for PBXNativeTarget "JumpClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0E70D0219BC5590002EABF /* Debug */,
+				6D0E70D1219BC5590002EABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D0E70B7219BC5580002EABF /* Project object */;
+}
