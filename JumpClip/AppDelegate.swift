@@ -42,13 +42,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-//        let opts = NSDictionary(object: kCFBooleanTrue,
-//                                forKey: kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString
-//            ) as CFDictionary
-//        
-//        AXIsProcessTrustedWithOptions(opts)
-   
+        let opts = NSDictionary(object: kCFBooleanTrue,
+                                forKey: kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString
+            ) as CFDictionary
         
+        AXIsProcessTrustedWithOptions(opts)
+   
+        createStatusMenu()
         // 设置数据库文件名
         setDefaultRealmForUser(username: "test")
         setEvevtObserve()
@@ -137,6 +137,35 @@ extension AppDelegate{
         }
     }
     
+    fileprivate func createStatusMenu(){
+        // 添加主菜单
+        let mainMenu = NSMenu()
+        
+        // 1. 获取系统状态栏的StatusItem
+
+        
+//        // 添加关于子选项
+//        let aboutItem = NSMenuItem(title: "About SimulatorFinder", action: #selector(MenuManager.showAbout), keyEquivalent: "")
+//        aboutItem.target = self
+//        mainMenu.addItem(aboutItem)
+//        // 添加Preference 子项
+//        let preferenceItem = NSMenuItem(title: "Preference...", action: #selector(MenuManager.showPreference), keyEquivalent: "")
+//        mainMenu.addItem(preferenceItem)
+//        preferenceItem.target = self
+//        // 添加分隔
+//        mainMenu.addItem(NSMenuItem.separator())
+        
+        // 添加退出项
+        let exitItem = NSMenuItem(title: "退出", action: #selector(exitApp), keyEquivalent: "")
+        mainMenu.addItem(exitItem)
+        exitItem.target = self
+        statusItem.menu = mainMenu
+        
+    }
+    @objc func click()  {
+        print("click statusItem ....")
+    }
+    
 }
 extension AppDelegate{
 
@@ -191,9 +220,11 @@ extension AppDelegate{
             }
             currentContent = content
         }
-
         
-        
+    }
+    @objc fileprivate func exitApp(){
+        print("exit. app")
+        NSApp.terminate(self)
     }
 }
 
