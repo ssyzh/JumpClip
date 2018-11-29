@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "StatusItemIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "StatusItemIcon@2x.png",
+      "filename" : "statusbar_menu_black@2x.png",
       "scale" : "2x"
     },
     {
