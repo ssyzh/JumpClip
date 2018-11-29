@@ -152,9 +152,12 @@ extension AppDelegate{
 //        let preferenceItem = NSMenuItem(title: "Preference...", action: #selector(MenuManager.showPreference), keyEquivalent: "")
 //        mainMenu.addItem(preferenceItem)
 //        preferenceItem.target = self
-//        // 添加分隔
-//        mainMenu.addItem(NSMenuItem.separator())
+        let openItem = NSMenuItem(title: "打开缓存", action: #selector(openCache), keyEquivalent: "")
+        mainMenu.addItem(openItem)
+        openItem.target = self
         
+        // 添加分隔
+        mainMenu.addItem(NSMenuItem.separator())
         // 添加退出项
         let exitItem = NSMenuItem(title: "退出", action: #selector(exitApp), keyEquivalent: "")
         mainMenu.addItem(exitItem)
@@ -223,8 +226,15 @@ extension AppDelegate{
         
     }
     @objc fileprivate func exitApp(){
-        print("exit. app")
         NSApp.terminate(self)
     }
+    
+    @objc fileprivate func openCache(){
+
+        NSWorkspace.shared.activateFileViewerSelecting([Realm.Configuration.defaultConfiguration.fileURL!
+            ])
+        
+    }
+    
 }
 

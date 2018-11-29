@@ -41,7 +41,9 @@ class BezelContentVC: NSViewController,NSTableViewDelegate,NSTableViewDataSource
                 se.selectIndex = 0
                 se.selectClipModels(page: se.selectPage)
                 se.table.reloadData()
-                se.table.selectRowIndexes(IndexSet(integer:0), byExtendingSelection: false)
+                if se.contentsArray.count != 0 {
+                    se.table.selectRowIndexes(IndexSet(integer:0), byExtendingSelection: false)
+                }
             }
             
         })
