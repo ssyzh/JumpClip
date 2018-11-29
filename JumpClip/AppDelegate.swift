@@ -42,11 +42,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        let opts = NSDictionary(object: kCFBooleanTrue,
-                                forKey: kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString
-            ) as CFDictionary
-        
-        AXIsProcessTrustedWithOptions(opts)
+//        let opts = NSDictionary(object: kCFBooleanTrue,
+//                                forKey: kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString
+//            ) as CFDictionary
+//        
+//        AXIsProcessTrustedWithOptions(opts)
    
         
         // 设置数据库文件名
@@ -165,15 +165,17 @@ extension AppDelegate{
             print("return == nil")
             return
         }
-        var currentApp: NSRunningApplication?
-        for run in NSWorkspace.shared.runningApplications{
-            if run.isActive {
-                currentApp = run
-                break
-            }
-        }
+  
         
+        currentChangeCount = jcPasteboard.changeCount
         if  let content = jcPasteboard.string(forType: .string) {
+            var currentApp: NSRunningApplication?
+            for run in NSWorkspace.shared.runningApplications{
+                if run.isActive {
+                    currentApp = run
+                    break
+                }
+            }
             guard currentContent != content else{
                 return;
             }
@@ -189,7 +191,6 @@ extension AppDelegate{
             }
             currentContent = content
         }
-        currentChangeCount = jcPasteboard.changeCount
 
         
         

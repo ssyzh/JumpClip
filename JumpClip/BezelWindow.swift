@@ -15,7 +15,7 @@ class BezelWindow: NSWindow {
         self.level = .screenSaver
         if let mainSize = NSScreen.main?.frame.size {
 
-            let wi:CGFloat = mainSize.width / 2
+            let wi:CGFloat = 460 * 2
             let he:CGFloat = 460
 //            self.setFrame(NSRect(x: (mainSize.width - wi)/2.0, y: (mainSize.height - he)/2.0, width: wi, height: he), display: true)
             self.setContentSize(NSSize(width: wi, height: he))

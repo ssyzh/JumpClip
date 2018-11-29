@@ -16,6 +16,8 @@ import Quartz
 class BezelContentVC: NSViewController,NSTableViewDelegate,NSTableViewDataSource {
 
     @IBOutlet weak var table: NSTableView!
+    @IBOutlet weak var detailInfo: NSTextField!
+    
     var selectIndex:Int = 0
     var selectPage:Int = 0
     
@@ -27,8 +29,10 @@ class BezelContentVC: NSViewController,NSTableViewDelegate,NSTableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor(white: 0.0, alpha: 0.5).cgColor
+        self.view.layer?.backgroundColor = NSColor(white: 0.0, alpha: 0.9).cgColor
         self.view.layer?.cornerRadius = 20.0
+        
+        
         self.table.rowSizeStyle = .custom
         
         _ = NotificationCenter.default.rx.notification(Notification.Name(rawValue: Constan.notifacation_appShow), object: nil).takeUntil(self.rx.deallocated).subscribe(onNext: {[weak self] (notification) in
@@ -157,6 +161,12 @@ extension BezelContentVC{
     }
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return 38.0
+    }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        
+        detailInfo.stringValue = contentsArray[table.selectedRow].content ?? ""
+
     }
     
 }

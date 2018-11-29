@@ -707,23 +707,23 @@
             <objects>
                 <viewController id="tGS-h8-ko8" customClass="BezelContentVC" customModule="JumpClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wXi-Oj-faE">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="676" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autoresizesSubviews="NO" borderType="none" horizontalLineScroll="60" horizontalPageScroll="10" verticalLineScroll="60" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="sy2-ZV-Ju8">
-                                <rect key="frame" x="50" y="30" width="380" height="210"/>
+                                <rect key="frame" x="50" y="30" width="270" height="302"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Ue8-zb-OQt">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="302"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="58" rowSizeStyle="automatic" viewBased="YES" id="4Gl-Hs-qEj">
-                                            <rect key="frame" x="0.0" y="0.0" width="380" height="210"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="270" height="302"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="377" minWidth="40" maxWidth="1000" id="aLa-VT-EFh">
+                                                <tableColumn width="267" minWidth="40" maxWidth="1000" id="aLa-VT-EFh">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -733,7 +733,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="HistoryCell" id="cWU-bV-tWe" customClass="HistoryCell" customModule="JumpClip" customModuleProvider="target">
-                                                            <rect key="frame" x="1" y="1" width="377" height="58"/>
+                                                            <rect key="frame" x="1" y="1" width="267" height="58"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BC3-JI-SrC">
@@ -746,8 +746,8 @@
                                                                     <color key="contentTintColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </imageView>
                                                                 <textField horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-BY-Wvs">
-                                                                    <rect key="frame" x="55" y="2" width="304" height="54"/>
-                                                                    <textFieldCell key="cell" selectable="YES" id="JiU-k1-sx7">
+                                                                    <rect key="frame" x="55" y="2" width="194" height="54"/>
+                                                                    <textFieldCell key="cell" selectable="YES" alignment="left" id="JiU-k1-sx7">
                                                                         <font key="font" metaFont="system" size="10"/>
                                                                         <mutableString key="title">苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集苹果网下载收集</mutableString>
                                                                         <color key="textColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
@@ -790,21 +790,48 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gib-rZ-Zfa">
+                                <rect key="frame" x="349" y="30" width="299" height="302"/>
+                                <textFieldCell key="cell" selectable="YES" title="qqq" id="CQD-TM-Yfg">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="x58-aV-0Py">
+                                <rect key="frame" x="335" y="10" width="1" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="w9a-69-XxX"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" drawsBackground="YES" id="FYp-F3-MLQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="0.65400862589754216" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="x58-aV-0Py" firstAttribute="top" secondItem="wXi-Oj-faE" secondAttribute="top" constant="10" id="GUK-Mm-qo4"/>
                             <constraint firstItem="sy2-ZV-Ju8" firstAttribute="leading" secondItem="wXi-Oj-faE" secondAttribute="leading" constant="50" id="HP3-e2-UMi"/>
+                            <constraint firstItem="gib-rZ-Zfa" firstAttribute="leading" secondItem="x58-aV-0Py" secondAttribute="trailing" constant="15" id="IRR-j0-jJx"/>
                             <constraint firstItem="sy2-ZV-Ju8" firstAttribute="top" secondItem="wXi-Oj-faE" secondAttribute="top" constant="30" id="QAz-ER-yQh"/>
                             <constraint firstAttribute="bottom" secondItem="sy2-ZV-Ju8" secondAttribute="bottom" constant="30" id="Uuo-p8-1ah"/>
-                            <constraint firstAttribute="trailing" secondItem="sy2-ZV-Ju8" secondAttribute="trailing" constant="50" id="cTr-xn-66Y"/>
+                            <constraint firstAttribute="bottom" secondItem="gib-rZ-Zfa" secondAttribute="bottom" constant="30" id="VwA-6H-ML3"/>
+                            <constraint firstItem="sy2-ZV-Ju8" firstAttribute="width" secondItem="wXi-Oj-faE" secondAttribute="width" multiplier="2/5" id="atm-nk-zX5"/>
+                            <constraint firstAttribute="trailing" secondItem="gib-rZ-Zfa" secondAttribute="trailing" constant="30" id="py6-qX-HuK"/>
+                            <constraint firstItem="gib-rZ-Zfa" firstAttribute="top" secondItem="wXi-Oj-faE" secondAttribute="top" constant="30" id="qpB-dY-A7U"/>
+                            <constraint firstAttribute="bottom" secondItem="x58-aV-0Py" secondAttribute="bottom" constant="10" id="rlx-y8-tMZ"/>
+                            <constraint firstItem="x58-aV-0Py" firstAttribute="leading" secondItem="sy2-ZV-Ju8" secondAttribute="trailing" constant="15" id="u6g-vZ-55L"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailInfo" destination="gib-rZ-Zfa" id="l9z-23-5nX"/>
                         <outlet property="table" destination="4Gl-Hs-qEj" id="qKj-Zi-MGr"/>
                     </connections>
                 </viewController>
                 <customObject id="LvU-UX-ciw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="272"/>
+            <point key="canvasLocation" x="908" y="-88"/>
         </scene>
     </scenes>
     <resources>
